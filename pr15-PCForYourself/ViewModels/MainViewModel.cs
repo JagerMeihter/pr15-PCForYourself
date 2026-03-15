@@ -12,7 +12,7 @@ namespace pr15_PCForYourself.ViewModels
         public ObservableCollection<SavedBuild> SavedBuilds { get; set; }
         public ComputerBuild CurrentBuild { get; set; }
 
-        private Page _currentPage;
+        public Page _currentPage;
         public Page CurrentPage
         {
             get { return _currentPage; }
@@ -39,7 +39,7 @@ namespace pr15_PCForYourself.ViewModels
             NavigateToBuildCommand.Execute(null);
         }
 
-        private void LoadTestData()
+        public void LoadTestData()
         {
             AllComponents = new ObservableCollection<PCComponent>
             {
@@ -58,7 +58,7 @@ namespace pr15_PCForYourself.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        public void OnPropertyChanged([CallerMemberName] string name = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }

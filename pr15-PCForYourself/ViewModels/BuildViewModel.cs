@@ -12,20 +12,20 @@ namespace pr15_PCForYourself.ViewModels
 {
     public class BuildViewModel : INotifyPropertyChanged
     {
-        private readonly MainViewModel _mainVM;
-        private PCComponent _selectedComponent;
+        public readonly MainViewModel _mainVM;
+        public PCComponent _selectedComponent;
 
         public ObservableCollection<PCComponent> FilteredComponents { get; set; }
         public ObservableCollection<string> Manufacturers { get; set; }
 
-        private string _searchText = "";
+        public string _searchText = "";
         public string SearchText
         {
             get { return _searchText; }
             set { _searchText = value; Filter(); OnPropertyChanged(); }
         }
 
-        private string _selectedManufacturer;
+        public string _selectedManufacturer;
         public string SelectedManufacturer
         {
             get { return _selectedManufacturer; }
