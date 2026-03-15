@@ -13,11 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace pr15_PCForYourself.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для BuildPage.xaml
-    /// </summary>
     public partial class BuildPage : Page
     {
         public BuildPage()

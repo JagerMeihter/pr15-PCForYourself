@@ -1,12 +1,13 @@
-﻿<Window x:Class="pr15_PCForYourself.MainWindow"
+﻿<Window x:Class="pr15_PCForYourself.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:pr15_PCForYourself"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="pr15_PCForYourself - Сборка ПК" Height="600" Width="900"
+        DataContext="{Binding Source={StaticResource Locator}}">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
+            <Button Content="Сборка" Command="{Binding NavigateToBuildCommand}" Margin="5" Padding="10,5"/>
+            <Button Content="Сохранённые сборки" Command="{Binding NavigateToSavedCommand}" Margin="5" Padding="10,5"/>
+        </StackPanel>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"/>
+    </DockPanel>
 </Window>

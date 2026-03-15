@@ -13,9 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pr15_PCForYourself
+namespace pr15_PCForYourself.Views
 {
-   
     public partial class MainWindow : Window
     {
         public MainWindow()

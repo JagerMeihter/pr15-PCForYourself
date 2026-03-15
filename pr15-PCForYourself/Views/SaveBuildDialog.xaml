@@ -1,0 +1,15 @@
+﻿<Window x:Class="pr15_PCForYourself.Views.SaveBuildDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сохранить сборку" Height="200" Width="300" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <TextBlock Text="Название сборки:"/>
+        <TextBox x:Name="BuildNameBox" Margin="0,0,0,10" Padding="5"/>
+        <TextBlock Text="Автор:"/>
+        <TextBox x:Name="AuthorBox" Margin="0,0,0,20" Padding="5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="OK" IsDefault="True" Click="OkButton_Click" Margin="5" Padding="10,5"/>
+            <Button Content="Отмена" IsCancel="True" Margin="5" Padding="10,5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

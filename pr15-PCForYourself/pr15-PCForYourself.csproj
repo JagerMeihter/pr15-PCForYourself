@@ -70,7 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\PCComponent.cs" />
     <Compile Include="Models\ComponentCategory.cs" />
     <Compile Include="Models\ComputerBuild.cs" />
     <Compile Include="Models\SavedBuild.cs" />
@@ -78,6 +78,9 @@
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\SavedBuildsViewModel.cs" />
+    <Compile Include="Views\SaveBuildDialog.xaml.cs">
+      <DependentUpon>SaveBuildDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SavedBuildsPage.xaml.cs">
       <DependentUpon>SavedBuildsPage.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\SaveBuildDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SavedBuildsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -13,11 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace pr15_PCForYourself.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для SavedBuildsPage.xaml
-    /// </summary>
     public partial class SavedBuildsPage : Page
     {
         public SavedBuildsPage()
