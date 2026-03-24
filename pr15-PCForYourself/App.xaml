@@ -1,11 +1,9 @@
 ﻿<Application x:Class="pr15_PCForYourself.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:ViewModels="clr-namespace:pr15_PCForYourself.ViewModels"
+             xmlns:viewModels="clr-namespace:pr15_PCForYourself.ViewModels"             
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary>
-            <ViewModels:MainViewModel x:Key="Locator"/>
-        </ResourceDictionary>
+        <ResourceDictionary />
     </Application.Resources>
 </Application>

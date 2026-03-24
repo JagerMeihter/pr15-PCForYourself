@@ -1,8 +1,7 @@
 ﻿<Window x:Class="pr15_PCForYourself.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="pr15_PCForYourself - Сборка ПК" Height="600" Width="900"
-        DataContext="{Binding Source={StaticResource Locator}}">
+        Title="pr15_PCForYourself - Сборка ПК" Height="600" Width="900">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
             <Button Content="Сборка" Command="{Binding NavigateToBuildCommand}" Margin="5" Padding="10,5"/>
